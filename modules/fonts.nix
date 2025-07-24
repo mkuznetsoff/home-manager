@@ -7,7 +7,7 @@
     newcomputermodern
     iosevka
     corefonts
-    ttf-nerd-fonts-symbols
+    nerd-fonts.symbols-only
 ];
 
 }

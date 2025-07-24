@@ -17,7 +17,11 @@
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
-    colorschemes.base16.enable = true;
-    colorschemes.base16.colorscheme = "catppuccin-mocha";
+    colorschemes.catppuccin = {
+      enable = true;
+      settings = {
+        flavour = "latte";
+      };
+    };
   };
 }
