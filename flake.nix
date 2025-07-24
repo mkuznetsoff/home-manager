@@ -21,10 +21,10 @@
     #   url = "github:Jas-SinghFSU/HyprPanel";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
-    # nix-photogimp = {
-    #   url = "github:Libadoxon/nix-photo-gimp";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    nix-photogimp = {
+      url = "github:Libadoxon/nix-photo-gimp";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, nixpkgs-unstable, ... } @ inputs:

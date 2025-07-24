@@ -16,23 +16,5 @@
     
     #apps
     inputs.nix-photogimp.packages.${pkgs.system}.default
-
-    #fonts
-#    (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
-    powerline-fonts
-    powerline-symbols
-    font-awesome
-    newcomputermodern
-    iosevka
-    noto-fonts
-    noto-fonts-extra   
-    noto-fonts-cjk-sans
-    noto-fonts-cjk-serif
-    corefonts
-
-    ##wine
-    #wineWowPackages.stable
-    #winetricks
-##    wineWowPackages.waylandFull
   ];
 }

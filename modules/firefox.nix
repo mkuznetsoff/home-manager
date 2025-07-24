@@ -1,12 +1,8 @@
 { pkgs, ... }:
 {
 
-  home.packages = with pkgs; [
-    tridactyl-native
-  ];
-
   programs.firefox = {
-    enable = true;
+    enable = false;
 
     profiles.default-release = {
       isDefault = true;
