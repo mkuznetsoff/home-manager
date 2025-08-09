@@ -15,6 +15,6 @@
     wl-clipboard
     
     #apps
-    inputs.nix-photogimp.packages.${pkgs.system}.default
+    nekoray
   ];
 }

@@ -21,10 +21,7 @@
     #   url = "github:Jas-SinghFSU/HyprPanel";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
-    nix-photogimp = {
-      url = "github:Libadoxon/nix-photo-gimp";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # adw-gimp3.url = "github:dp0sk/adw-gimp3";
   };
 
   outputs = { self, nixpkgs, home-manager, nixpkgs-unstable, ... } @ inputs:
@@ -57,6 +54,7 @@
         modules = [
           ./home.nix
           inputs.nixvim.homeManagerModules.nixvim
+          # inputs.adw-gimp3.homeManagerModules.default
         ];
       };
     };
