@@ -1,5 +1,4 @@
 {pkgs, ...}: {
-  fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
     powerline-fonts
     powerline-symbols
@@ -7,7 +6,7 @@
     newcomputermodern
     iosevka
     corefonts
-    nerd-fonts.symbols-only
+    nerd-fonts.caskaydia-mono
 ];
 
 }

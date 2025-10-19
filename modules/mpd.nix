@@ -10,7 +10,6 @@
     dataDir = "/home/mk/.local/share/mpd";
     extraConfig = ''
 
-      pid_file "~/.config/mpd/pid"
 
       auto_update "yes"
       restore_paused "yes"

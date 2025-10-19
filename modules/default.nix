@@ -13,7 +13,5 @@
     ./ncmpcpp.nix
     ./mpdris.nix
     ./fonts.nix
-    ./dconf.nix
-    ./kitty.nix
   ];
 }

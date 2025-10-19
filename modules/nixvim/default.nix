@@ -1,4 +1,4 @@
-{ ... }:
+{pkgs, ... }:
 {
   imports = [
     ./plugins.nix
@@ -12,16 +12,24 @@
     ./keymaps.nix
     ./snippets.nix
     ./dashboard.nix
+    ./nvim-tree.nix
+    ./markdown.nix
+    ./guess-indent.nix
   ];
 
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
-    colorschemes.catppuccin = {
+    colorschemes.base16 = {
       enable = true;
-      settings = {
-        flavour = "latte";
-      };
+      colorscheme = "one-light";
+      autoLoad = true;
     };
+    extraConfigVim = ''
+  syntax enable
+  set termguicolors
+  colorscheme base16-one-light
+'';
+
   };
 }

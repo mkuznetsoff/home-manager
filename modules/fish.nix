@@ -15,6 +15,7 @@
 
     shellInit = ''
       set fish_greeting
+      set MOZ_ENABLE_WAYLAND 1
     '';
 
     functions = {

@@ -1,37 +1,33 @@
 {
   programs.nixvim = {
-    plugins."nvim-tree" = {
+    plugins."neo-tree" = {
       enable = true;
 
-      settings = {
-        disable_netrw = true;
-        hijack_netrw = true;
-        view = {
-          width = 35;
-          side = "left";
-          relativenumber = true;
+      closeIfLastWindow = true;
+
+      filesystem = {
+        filteredItems = {
+          hideDotfiles = false;
+          hideHidden = false;
+
+          neverShowByPattern = [
+            ".direnv"
+            ".git"
+          ];
+
+          visible = true;
         };
-        renderer = {
-          icons = {
-            show = {
-              file = true;
-              folder = true;
-              folder_arrow = true;
-              git = true;
-            };
-          };
-        };
-        update_focused_file = {
-          enable = true;
-          update_cwd = true;
-        };
-        git = {
-          enable = true;
+
+        followCurrentFile = {
+          enabled = true;
+          leaveDirsOpen = true;
         };
       };
-    };
 
-    keymaps = [
-    ];
+      window = {
+        # width = 40;
+        autoExpandWidth = true;
+      };
   };
+};
 }
