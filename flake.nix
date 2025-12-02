@@ -14,13 +14,13 @@
     };
     # polymc.url = "github:PolyMC/PolyMC";
     # nixgl.url = "github:nix-community/nixGL";
-    # hyprland.url = "github:hyprwm/Hyprland";
-    # stylix.url = "github:danth/stylix/release-25.05";
-    # apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
-    # hyprpanel = {
-    #   url = "github:Jas-SinghFSU/HyprPanel";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+     hyprland.url = "github:hyprwm/Hyprland";
+     stylix.url = "github:danth/stylix/release-25.05";
+     apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
+     hyprpanel = {
+       url = "github:Jas-SinghFSU/HyprPanel";
+       inputs.nixpkgs.follows = "nixpkgs";
+     };
     # adw-gimp3.url = "github:dp0sk/adw-gimp3";
   };
 
@@ -54,6 +54,7 @@
         modules = [
           ./home.nix
           inputs.nixvim.homeManagerModules.nixvim
+          inputs.stylix.homeManagerModules.stylix
           # inputs.adw-gimp3.homeManagerModules.default
         ];
       };
